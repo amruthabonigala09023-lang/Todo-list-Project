@@ -1,0 +1,71 @@
+.list{
+    background-color:rgb(101, 97, 214);
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.todo{
+    
+    width:400px;
+    text-align: center;
+    padding:200px 0px 200px 0px;
+    margin:100px;
+    border:2px solid #000;
+    border-radius: 10px;
+    background-color:#ccbfdf;
+    box-shadow: #000;
+
+}
+
+h1 {
+  margin-top: -170px;
+}
+.unorder{
+    text-align:left;
+    margin-top: 20px;
+    
+    list-style-position: inside;
+    list-style: none;
+}
+
+
+#inputvalue {
+  padding: 10px 35px 10px 35px;
+  border-radius: 3px solid;
+
+}
+button {
+  padding: 10px;
+  border-radius: 1px solid;
+  background-color: green;
+  color: white;
+}
+
+.unorder li{
+    padding:12px 15px;
+    background-color: ghostwhite;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0px 36px 10px 0px;
+  
+   
+    
+}
+
+#getdata li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 91%;
+  padding: 0px;
+  margin-bottom: 18px;
+  background-color: #f2f2f2;
+  border-radius: 0px;
+  margin-left: -7px;
+}
+

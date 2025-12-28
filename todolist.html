@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/todolist.css" />
+</head>
+
+<body class="list">
+    <div class="todo">
+        <h1>TO-DO-LIST</h1>
+        <input type="text" placeholder="Enter a task..." id="inputvalue" />
+        <button onclick="addname()">Add</button>
+
+        <ul class="unorder" id="getdata">
+
+        </ul>
+    </div>
+
+
+    <script class="box">
+        function addname() {
+            let res = document.getElementById("inputvalue")
+            let getName = inputvalue.value.trim()
+
+            let li = document.createElement("li")
+            let span = document.createElement("span")
+            span.textContent = getName
+
+            let delBtn = document.createElement("button")
+            delBtn.textContent = "Del"
+            delBtn.onclick = function () {
+                li.remove()
+            }
+
+
+            li.appendChild(span)
+            li.appendChild(delBtn)
+            document.getElementById("getdata").appendChild(li)
+            inputvalue.value = ""
+
+        }
+    </script>
+
+
+</body>
+
+</html>
